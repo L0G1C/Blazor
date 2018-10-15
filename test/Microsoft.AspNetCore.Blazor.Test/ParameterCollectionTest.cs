@@ -326,6 +326,8 @@ namespace Microsoft.AspNetCore.Blazor.Test
 
             public object CurrentValue { get; }
 
+            public bool CurrentValueIsFixed => false;
+
             public bool CanSupplyValue(Type valueType, string valueName)
                 => throw new NotImplementedException();
 
